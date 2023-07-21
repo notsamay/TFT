@@ -249,64 +249,64 @@ html {
     opacity: 1;
   }
   
-/* ... (previous styles) ... */
+  @media screen and (max-width: 768px) {
+    /* ... (previous styles) ... */
 
-/* Additional styles for contact section */
-
-/* ... (previous styles) ... */
-
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
     /* Center the text in the "About Me" section */
     .textbox p,
     .textbox h3 {
-      text-align: center;
-      font-size: 2.5vw;
+        text-align: center;
+        font-size: 2.5vw;
     }
-  
-    /* Reset the flex-direction to row for "About Me" section */
-    #section2 .content {
-      flex-direction: row;
-    }
-  
-    .textbox {
-      flex: 1; /* Let the text take half of the container's width */
-      margin: 0 10px; /* Add some space between text and image */
-    }
-  
-    .image {
-      flex: 1; /* Let the image take half of the container's width */
-    }
-  
-    .image img {
-      width: 50vw; /* Increase the width of the image */
-    }
-  
-    /* Arrange gallery images in rows of three */
-    .gallery {
-      flex-wrap: wrap;
-      justify-content: space-between; /* Adjust the spacing between the images */
-    }
-  
-    .gallery-image {
-      width: calc(33.33% - 20px); /* 3 images per row, adjust the width and margin as needed */
-      margin: 5px; /* Add some space between images */
-    }
-  }
-  
-  /* Additional styles for contact section */
-  
-  /* ... (previous styles) ... */
-  
-  /* Additional styles for contact section */
-  
-  /* ... (previous styles) ... */
 
-  
-  /* Additional styles for contact section */
-  
-  /* ... (previous styles) ... */
-  
-  /* Additional styles for contact section */
-  
-  /* ... (previous styles) ... */
+    /* Reset the flex-direction to column for "About Me" section */
+    #section2 .content {
+        flex-direction: column;
+        align-items: center; /* Center align items vertically */
+    }
+
+    .textbox {
+        flex: 1; /* Let the text take full width of the container */
+        margin: 10px; /* Add some space between text and image */
+        padding: 0 20px; /* Add padding to prevent text from getting cut off */
+    }
+
+    .image {
+        flex: 1; /* Let the image take full width of the container */
+        margin: 10px; /* Add some space between text and image */
+    }
+
+    .image img {
+        width: 100%; /* Adjust the width of the image to fit the container */
+    }
+
+    /* Arrange gallery images in a 3 by 3 grid */
+    .gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery-image {
+        width: calc(33.33% - 20px); /* 3 images per row, adjust the width and margin as needed */
+        margin: 5px; /* Add some space between images */
+    }
+
+    /* Additional styles for contact section */
+    .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-item {
+        flex: 0 1 calc(33.33% - 20px); /* 3 items per row, adjust the width and margin as needed */
+        /* ... (other styles) ... */
+        margin: 10px;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    /* ... (previous styles) ... */
+
+}
