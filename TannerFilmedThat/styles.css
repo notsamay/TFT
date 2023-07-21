@@ -14,7 +14,7 @@ html {
     top: 0;
     width: 100%;
     background-color: #333;
-    height: 70px;
+    height: 10vh;
     z-index: 999;
   }
   
@@ -23,6 +23,9 @@ html {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Add justify-content to center the items horizontally */
   }
   
   nav ul li {
@@ -33,12 +36,15 @@ html {
     display: block;
     color: #fff;
     text-align: center;
-    padding-left: 16vw; /* 1920px to 2560px = 7.5vw */
-    padding-top: 4.6875vh; /* 1080px to 1600px = 4.6875vh */
+    padding-top: 5vh; /* 1080px to 1600px = 4.6875vh */
+    padding-right: 10vw; /* 1920px to 2560px = 7.5vw */
+    padding-bottom: 0;
+    padding-left: 10vw;
     text-decoration: none;
-    font-size: 1.3vw; /* 1920px to 2560px = 1.3vw */
+    font-size: 2vh; /* 1920px to 2560px = 1.3vw */
     font-family: 'Arial', sans-serif;
   }
+  
   
   nav ul li a:hover {
     text-decoration: underline;
@@ -243,4 +249,50 @@ html {
     opacity: 1;
   }
   
+/* Additional styles for contact section */
+
+/* ... (previous styles) ... */
+
+/* Additional styles for contact section */
+
+/* ... (previous styles) ... */
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Center the text in the "About Me" section */
+    .textbox p,
+    .textbox h3 {
+      text-align: center;
+      font-size: 2.5vw;
+    }
+  
+    /* Reset the flex-direction to row for "About Me" section */
+    #section2 .content {
+      flex-direction: row;
+    }
+  
+    .textbox {
+      flex: 1; /* Let the text take half of the container's width */
+      margin: 0 10px; /* Add some space between text and image */
+    }
+  
+    .image {
+      flex: 1; /* Let the image take half of the container's width */
+      margin: 0 10px; /* Add some space between text and image */
+      padding-right: 3vw;
+    }
+  
+    .image img {
+      width: 30vw; /* Adjust the width of the image */
+    }
+  
+    /* Arrange gallery images in rows of three */
+    .gallery {
+      flex-wrap: wrap;
+    }
+  
+    .gallery-image {
+      width: 30%; /* 3 images per row, adjust the width as needed */
+    }
+  }
   
