@@ -263,6 +263,13 @@ html {
 /* ... (previous styles) ... */
 
 /* Media query for smaller screens */
+/* ... (previous styles) ... */
+
+/* Additional styles for contact section */
+
+/* ... (previous styles) ... */
+
+/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     /* Center the text in the "About Me" section */
     .textbox p,
@@ -288,16 +295,17 @@ html {
     }
   
     .image img {
-      width: 40vw; /* Increase the width of the image */
+      width: 50vw; /* Increase the width of the image */
     }
   
     /* Arrange gallery images in rows of three */
     .gallery {
       flex-wrap: wrap;
+      justify-content: space-between; /* Adjust the spacing between the images */
     }
   
     .gallery-image {
-      width: 30%; /* 3 images per row, adjust the width as needed */
+      width: calc(33.33% - 20px); /* 3 images per row, adjust the width and margin as needed */
       margin: 5px; /* Add some space between images */
     }
   }
@@ -309,4 +317,3 @@ html {
   /* Additional styles for contact section */
   
   /* ... (previous styles) ... */
-  
