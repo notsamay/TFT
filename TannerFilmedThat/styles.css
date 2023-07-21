@@ -7,7 +7,7 @@ html {
     margin: 0;
     padding: 0;
     position: relative;
-    overflow-x: hidden;
+    
   }
   
   nav {
@@ -254,6 +254,9 @@ html {
     /* ... (previous styles) ... */
 
     /* Center the text in the "About Me" section */
+    body{
+        overflow-x: hidden;
+    }
     .textbox p,
     .textbox h3 {
         text-align: center;
