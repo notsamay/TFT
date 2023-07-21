@@ -37,9 +37,9 @@ html {
     color: #fff;
     text-align: center;
     padding-top: 5vh; /* 1080px to 1600px = 4.6875vh */
-    padding-right: 10vw; /* 1920px to 2560px = 7.5vw */
+    padding-right: 8vw; /* 1920px to 2560px = 7.5vw */
     padding-bottom: 0;
-    padding-left: 10vw;
+    padding-left: 8vw;
     text-decoration: none;
     font-size: 2vh; /* 1920px to 2560px = 1.3vw */
     font-family: 'Arial', sans-serif;
@@ -258,6 +258,11 @@ html {
 /* ... (previous styles) ... */
 
 /* Media query for smaller screens */
+/* Additional styles for contact section */
+
+/* ... (previous styles) ... */
+
+/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     /* Center the text in the "About Me" section */
     .textbox p,
@@ -283,7 +288,7 @@ html {
     }
   
     .image img {
-      width: 30vw; /* Adjust the width of the image */
+      width: 40vw; /* Increase the width of the image */
     }
   
     /* Arrange gallery images in rows of three */
@@ -293,6 +298,15 @@ html {
   
     .gallery-image {
       width: 30%; /* 3 images per row, adjust the width as needed */
+      margin: 5px; /* Add some space between images */
     }
   }
+  
+  /* Additional styles for contact section */
+  
+  /* ... (previous styles) ... */
+  
+  /* Additional styles for contact section */
+  
+  /* ... (previous styles) ... */
   
