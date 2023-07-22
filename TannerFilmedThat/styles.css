@@ -251,14 +251,15 @@ html {
     opacity: 1;
   }
   
-  @media screen and (max-width: 768px) {
+/* ... (previous styles) ... */
+
+@media screen and (max-width: 768px) {
     /* ... (previous styles) ... */
 
     /* Center the text in the "About Me" section */
-    body{
+    body {
         overflow-x: hidden;
     }
-   
 
     /* Reset the flex-direction to column for "About Me" section */
     #section2 .content {
@@ -267,11 +268,9 @@ html {
     }
 
     nav ul li a {
-    
-        padding-right: 5vw; 
+        padding-right: 5vw;
         padding-left: 5vw;
-
-      }
+    }
 
     .image img {
         width: 100%; /* Adjust the width of the image to fit the container */
@@ -287,8 +286,13 @@ html {
         width: calc(33.33% - 10px); /* 3 images per row, adjust the width and margin as needed */
         margin: 5px; /* Add some space between images */
     }
-    .gallery-image img{
-        width: 35vw;
+
+    .gallery-image img {
+        width: 35vw; /* Increase the width of the gallery images for smaller screens */
+    }
+
+    .GalleryText {
+        font-size: 3rem; /* Increase the font size of the heading in the about me section */
     }
 
     /* Additional styles for contact section */
@@ -300,6 +304,34 @@ html {
     }
 
     .contact-item {
-        border-radius: 8px;
+        flex: 0 1 calc(50% - 20px); /* 2 items per row, adjust the width and margin as needed */
+        text-align: center;
+        color: #f2f2f2;
+        font-family: 'Arial', sans-serif;
+        background-color: #33333300; /* Add background color to each contact item */
+        border-radius: 8px; /* Add border-radius for rounded corners */
+        margin: 10px;
+        padding: 10px; /* Reduce padding for smaller contact items */
     }
-  }
+
+    .contact-item svg {
+        width: 3vw; /* Reduce the size of the SVG icons for smaller screens */
+    }
+
+    .contact-item h3 {
+        font-size: 1.2vw; /* Reduce the font size for contact item heading */
+        margin-bottom: 5px; /* Adjust the margin for the contact item heading */
+    }
+
+    .contact-item p {
+        font-size: 16px; /* Reduce the font size for the contact item description */
+    }
+}
+
+/* Additional styles for contact section */
+
+/* ... (previous styles) ... */
+
+/* Additional styles for contact section */
+
+/* ... (previous styles) ... */
