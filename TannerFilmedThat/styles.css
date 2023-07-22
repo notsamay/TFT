@@ -273,7 +273,8 @@ html {
     }
     .LandingText{
 
-        font-size: 4vw;
+        font-size: 5vw;
+        white-space: normal; /* Allow line breaks on smaller viewports */
     }
     nav ul li a {
         padding-right: 5vw;
