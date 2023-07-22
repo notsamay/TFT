@@ -72,7 +72,7 @@ html {
   
   .LandingText {
     font-size: 5vw; /* 1920px to 2560px = 5vw */
-    letter-spacing: 15px;
+    letter-spacing: 1vw;
     white-space: nowrap;
     overflow: hidden;
     border-right: 5px solid;
@@ -273,7 +273,7 @@ html {
     }
     .LandingText{
 
-        font-size: 5vw;
+        font-size: 7vw;
         white-space: normal; /* Allow line breaks on smaller viewports */
     }
     nav ul li a {
