@@ -252,13 +252,11 @@ html {
   }
   
 /* ... (previous styles) ... */
-
+/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
-    /* ... (previous styles) ... */
-
-    /* Center the text in the "About Me" section */
-    body {
-        overflow-x: hidden;
+    nav ul li a {
+        padding-right: 5vw;
+        padding-left: 5vw;
     }
 
     /* Reset the flex-direction to column for "About Me" section */
@@ -267,13 +265,27 @@ html {
         align-items: center; /* Center align items vertically */
     }
 
-    nav ul li a {
-        padding-right: 5vw;
-        padding-left: 5vw;
-    }
-
     .image img {
         width: 100%; /* Adjust the width of the image to fit the container */
+    }
+
+    /* Remove image and adjust text styles for "About Me" section */
+    .image {
+        display: none; /* Hide the image on smaller screens */
+    }
+
+    .textbox {
+        width: 80%; /* Adjust width of the text container */
+        margin: 20px auto; /* Center align the text */
+    }
+
+    .textbox p {
+        font-size: 3vw; /* Increase the font size for the paragraph */
+        line-height: 1.4; /* Adjust line-height for better readability */
+    }
+
+    .textbox h3 {
+        font-size: 4vw; /* Increase the font size for the heading */
     }
 
     /* Arrange gallery images in a 3 by 3 grid */
@@ -292,7 +304,7 @@ html {
     }
 
     .GalleryText {
-        font-size: 3rem; /* Increase the font size of the heading in the about me section */
+        font-size: 4rem; /* Increase the font size of the heading in the about me section */
     }
 
     /* Additional styles for contact section */
@@ -327,11 +339,3 @@ html {
         font-size: 16px; /* Reduce the font size for the contact item description */
     }
 }
-
-/* Additional styles for contact section */
-
-/* ... (previous styles) ... */
-
-/* Additional styles for contact section */
-
-/* ... (previous styles) ... */
