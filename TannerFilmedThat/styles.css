@@ -269,7 +269,10 @@ html {
     body {
         overflow-x: hidden; /* Disable horizontal scrolling */
     }
+    .LandingText{
 
+        font-size: 4vw;
+    }
     nav ul li a {
         padding-right: 5vw;
         padding-left: 5vw;
