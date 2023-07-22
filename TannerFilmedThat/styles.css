@@ -256,7 +256,14 @@ html {
 /* ... (previous styles) ... */
 
 /* Media query for smaller screens */
+/* ... (previous styles) ... */
+
+/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden; /* Disable horizontal scrolling */
+    }
+
     nav ul li a {
         padding-right: 5vw;
         padding-left: 5vw;
@@ -268,11 +275,6 @@ html {
         align-items: center; /* Center align items vertically */
     }
 
-    .image img {
-        width: 100%; /* Adjust the width of the image to fit the container */
-    }
-
-    /* Remove image and adjust text styles for "About Me" section */
     .image {
         display: none; /* Hide the image on smaller screens */
     }
@@ -280,6 +282,7 @@ html {
     .textbox {
         width: 80%; /* Adjust width of the text container */
         margin: 20px auto; /* Center align the text */
+        text-align: center; /* Center align the text content */
     }
 
     .textbox p {
@@ -307,7 +310,7 @@ html {
     }
 
     .GalleryText {
-        font-size: 4rem; /* Increase the font size of the heading in the about me section */
+        font-size: 5rem; /* Increase the font size of the heading in the about me section */
     }
 
     /* Additional styles for contact section */
@@ -316,10 +319,11 @@ html {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        text-align: center; /* Center align the contact items */
     }
 
     .contact-item {
-        flex: 1; /* Let the contact items take equal space in a row */
+        flex: 0 1 calc(50% - 20px); /* 2 items per row, adjust the width and margin as needed */
         text-align: center;
         color: #f2f2f2;
         font-family: 'Arial', sans-serif;
@@ -342,3 +346,4 @@ html {
         font-size: 12px; /* Reduce the font size for the contact item description */
     }
 }
+
