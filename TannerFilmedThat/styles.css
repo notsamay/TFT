@@ -259,6 +259,12 @@ html {
 /* ... (previous styles) ... */
 
 /* Media query for smaller screens */
+/* ... (previous styles) ... */
+
+/* Media query for smaller screens */
+/* ... (previous styles) ... */
+
+/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden; /* Disable horizontal scrolling */
@@ -280,18 +286,22 @@ html {
     }
 
     .textbox {
-        width: 80%; /* Adjust width of the text container */
-        margin: 20px auto; /* Center align the text */
-        text-align: center; /* Center align the text content */
+
+       align-items: center;
+
     }
 
     .textbox p {
         font-size: 3vw; /* Increase the font size for the paragraph */
         line-height: 1.4; /* Adjust line-height for better readability */
+        text-align: center;
+        width: 80vw;
     }
 
     .textbox h3 {
         font-size: 4vw; /* Increase the font size for the heading */
+        text-align: center;
+        width: 80vw;
     }
 
     /* Arrange gallery images in a 3 by 3 grid */
@@ -309,17 +319,17 @@ html {
         width: 35vw; /* Increase the width of the gallery images for smaller screens */
     }
 
-    .GalleryText {
-        font-size: 5rem; /* Increase the font size of the heading in the about me section */
+    .GalleryText h2 {
+        font-size: 1.5rem; /* Increase the font size of the heading in the about me section */
     }
 
     /* Additional styles for contact section */
     .contact-info {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        text-align: center; /* Center align the contact items */
+        display: grid; /* Use CSS Grid to arrange the contact items */
+        grid-template-columns: repeat(2, 1fr); /* 2 columns in the grid */
+        gap: 20px; /* Add some gap between the contact items */
+        justify-items: center; /* Center the items horizontally */
+        text-align: center; /* Center align the text content */
     }
 
     .contact-item {
@@ -334,7 +344,7 @@ html {
     }
 
     .contact-item svg {
-        width: 3vw; /* Reduce the size of the SVG icons for smaller screens */
+        width: 5vw; /* Reduce the size of the SVG icons for smaller screens */
     }
 
     .contact-item h3 {
@@ -345,5 +355,10 @@ html {
     .contact-item p {
         font-size: 12px; /* Reduce the font size for the contact item description */
     }
-}
 
+    /* Adjust height of section 3 to fit the contact items properly */
+    #section3 {
+        height: auto;
+        min-height: 60vh; /* Adjust this value as needed */
+    }
+}
