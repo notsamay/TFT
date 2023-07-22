@@ -300,11 +300,6 @@ html {
     }
 
     .contact-item {
-        flex: 0 1 calc(40% - 20px); /* 2 items per row, adjust the width and margin as needed */
-        /* ... (other styles) ... */
-        margin: 10px;
-        padding: 15px; /* Reduce padding for smaller contact items */
         border-radius: 8px;
-        background-color: green;
     }
   }
