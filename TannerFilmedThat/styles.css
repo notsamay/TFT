@@ -253,6 +253,9 @@ html {
   
 /* ... (previous styles) ... */
 /* Media query for smaller screens */
+/* ... (previous styles) ... */
+
+/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     nav ul li a {
         padding-right: 5vw;
@@ -316,7 +319,7 @@ html {
     }
 
     .contact-item {
-        flex: 0 1 calc(50% - 20px); /* 2 items per row, adjust the width and margin as needed */
+        flex: 1; /* Let the contact items take equal space in a row */
         text-align: center;
         color: #f2f2f2;
         font-family: 'Arial', sans-serif;
@@ -331,11 +334,11 @@ html {
     }
 
     .contact-item h3 {
-        font-size: 1.2vw; /* Reduce the font size for contact item heading */
+        font-size: 2vw; /* Reduce the font size for contact item heading */
         margin-bottom: 5px; /* Adjust the margin for the contact item heading */
     }
 
     .contact-item p {
-        font-size: 16px; /* Reduce the font size for the contact item description */
+        font-size: 12px; /* Reduce the font size for the contact item description */
     }
 }
