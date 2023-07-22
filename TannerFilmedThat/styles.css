@@ -1,5 +1,7 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%; /* Set the width to 100% to ensure content fits within the screen */
   }
   
   body {
@@ -286,6 +288,13 @@ html {
 
     .image {
         display: none; /* Hide the image on smaller screens */
+        padding:0;
+        width: 0;
+
+    }
+    .image img{
+        padding:0;
+        width: 0;
     }
 
     .textbox {
@@ -314,12 +323,12 @@ html {
     }
 
     .gallery-image {
-        width: calc(33.33% - 10px); /* 3 images per row, adjust the width and margin as needed */
+        width: calc(40% - 10px); /* 3 images per row, adjust the width and margin as needed */
         margin: 5px; /* Add some space between images */
     }
 
     .gallery-image img {
-        width: 35vw; /* Increase the width of the gallery images for smaller screens */
+        width: 40vw; /* Increase the width of the gallery images for smaller screens */
     }
 
     .GalleryText h2 {
@@ -347,7 +356,7 @@ html {
     }
 
     .contact-item svg {
-        width: 5vw; /* Reduce the size of the SVG icons for smaller screens */
+        width: 8vw; /* Reduce the size of the SVG icons for smaller screens */
     }
 
     .contact-item h3 {
