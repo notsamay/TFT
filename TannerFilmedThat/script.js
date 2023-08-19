@@ -13,4 +13,7 @@ const observer = new IntersectionObserver((entries) => {
     const delay = 200 * index; // Adjust the delay value as needed (milliseconds)
     setTimeout(() => observer.observe(el), delay);
   });
-  
+  window.addEventListener('load', () => {
+    const loadingContainer = document.querySelector('.loading-container');
+    loadingContainer.style.display = 'none';
+});
