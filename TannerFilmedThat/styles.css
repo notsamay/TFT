@@ -12,6 +12,9 @@ html {
     overflow-x: hidden;
     
   }
+  .container{
+    background-color: #4a4a4a12;
+  }
   
   nav {
     position: fixed;
@@ -63,11 +66,12 @@ html {
   
   header {
     height: 100vh;
-    background-image: url("utah prospects-093.jpg");
-    background-size: cover;
+    background:url("Pictures/Tanner21.jpg") ,url("Pictures//Tanner90.jpg");
+    background-size: 70vw;
     background-position: center;
     display: flex;
     align-items: center;
+  
     justify-content: center;
     color: #fff;
     padding-top: 18.75vh; /* 1080px to 1600px = 18.75vh */
@@ -163,7 +167,7 @@ html {
   }
   
   .image img {
-    width: 28.90625vw; /* 100px to 2560px = 3.90625vw */
+    width: 25vw; /* 100px to 2560px = 3.90625vw */
     height: auto;
     padding-left: 8.90625vw; /* 100px to 2560px = 3.90625vw */
   }
@@ -282,18 +286,7 @@ html {
     opacity: 1;
   }
   
-/* ... (previous styles) ... */
-/* Media query for smaller screens */
-/* ... (previous styles) ... */
 
-/* Media query for smaller screens */
-/* ... (previous styles) ... */
-
-/* Media query for smaller screens */
-/* ... (previous styles) ... */
-
-/* Media query for smaller screens */
-/* ... (previous styles) ... */
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
