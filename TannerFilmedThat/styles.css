@@ -149,11 +149,13 @@ html {
     text-align: left;
     margin-left: 3.90625vw; /* 1920px to 2560px = 3.90625vw */
     font-family: 'Arial', sans-serif;
+    text-indent: 5vw;
   }
   .textbox h3 {
     width: 50vw;
     padding: 20px;
-    font-size: 2vw;
+    font-size: 2.3vw;
+    padding-left: 7.5vw;
     color: #333;
     text-align: left;
     margin-left: 3.90625vw; /* 1920px to 2560px = 3.90625vw */
@@ -289,7 +291,7 @@ html {
 
 
 /* Media query for smaller screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 668px) {
     body {
         overflow-x: hidden; /* Disable horizontal scrolling */
     }
@@ -322,20 +324,21 @@ html {
 
     .textbox {
 
-       align-items: center;
+       align-items: left;
 
     }
 
     .textbox p {
+        
         font-size: 3vw; /* Increase the font size for the paragraph */
         line-height: 1.4; /* Adjust line-height for better readability */
-        text-align: center;
+        text-align: left;
         width: 80vw;
     }
 
     .textbox h3 {
         font-size: 4vw; /* Increase the font size for the heading */
-        text-align: center;
+        text-align: left;
         width: 80vw;
     }
 
