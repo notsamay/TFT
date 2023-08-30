@@ -291,7 +291,7 @@ html {
 
 
 /* Media query for smaller screens */
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 1000px) {
     body {
         overflow-x: hidden; /* Disable horizontal scrolling */
     }
