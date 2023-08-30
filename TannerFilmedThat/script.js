@@ -10,7 +10,7 @@ const observer = new IntersectionObserver((entries) => {
   
   const hiddenElements = document.querySelectorAll('.hidden');
   hiddenElements.forEach((el, index) => {
-    const delay = 0 * index; // Adjust the delay value as needed (milliseconds)
+    const delay = 20 * index; // Adjust the delay value as needed (milliseconds)
     setTimeout(() => observer.observe(el), delay);
   });
   window.addEventListener('load', () => {
